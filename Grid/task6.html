@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task6</title>
+</head>
+
+<style>
+.container {
+    display: grid;
+    grid-template-columns: repeat(5);
+    grid-template-rows: repeat(5);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    width: 100%;
+    height: 100vh;
+}
+
+.div1, .div2, .div3, .div4, .div5 { background: yellow;}
+
+.div1 { grid-area: 1 / 1 / 6 / 2; }
+.div2 { grid-area: 1 / 2 / 2 / 6; }
+.div3 { grid-area: 2 / 2 / 5 / 5; }
+.div4 { grid-area: 2 / 5 / 5 / 6; }
+.div5 { grid-area: 5 / 2 / 6 / 6; }
+
+p{
+    padding: 10px;
+}
+</style>
+
+<body>
+    <div class="container">
+        <div class="div1"><p>Nav</p></div>
+        <div class="div2"><p>Header</p></div>
+        <div class="div3"><p>Article</p></div>
+        <div class="div4"><p>Ads</p></div>
+        <div class="div5"><p>Footer</p></div>
+    </div>
+</body>
+</html>
